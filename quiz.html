@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+    
+    <title>quiz</title>
+
+    <style>
+        .quiz-body{
+            display: none;
+        }
+        .start-after{
+            display: none;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" >
+        <div class="container">
+            <a href="home.html" class="navbar-brand"><h3>Basic<span style="color: #683BA4;">JS.</span></h3></a>
+            <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="navbar-collapse collapse" id="navbar" >
+                <ul class="navbar-nav  ml-auto">
+                  <li class="nav-item"><a href="home.html" class="nav-link" style="color: #683BA4;">Home</a></li>
+                  <li class="nav-item"><a href="convertetr.html" class="nav-link" style="color: #683BA4;">Converter</a></li>
+                  <li class="nav-item"><a href="quiz.html" class="nav-link" style="color: #683BA4;"><b>Quiz</b></a></li>
+                  
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="section_quiz">
+        <div class="container">
+            <div id="section_quota" style=" position: absolute; top: 20%;">
+                <div class="row">
+                    <div class="col-lg-5" >
+                        <img id="tempImage" src="./quiz.png" height="450px" width="450px" alt="">
+    
+                    </div>
+                    
+                    <div class="col-lg-5 ml-lg-5 m-sm-0">
+                        <div class="row">
+                            <h1 id="my-name"  style="color: #360f6b;">Welcome To Quiz Section<span style="color: #683BA4;">.</span></h1>
+                            <p class=" pr-3 m-2" id="lorem"><i>Enter valid Input and press Enter to <span style="color: #683BA4;"><b>Enable</b></span> Start Button</i></p>
+                            
+                            
+
+                        </div>
+                        <div class="row mt-3 mb-3">
+                           
+                            <div class="quiz_wripper mb-5">
+                                        
+                                <div class="start">
+                                    
+                                    <h2 style="color: #360f6b; font-family: 'Lobster Two', cursive;">How many qus you want to answer?</h2>
+                                    
+                                    <input onchange="enable()" type="number" id="qusNum" placeholder="Enter Input" class="input-custom" value="">
+                                    <p><i><span style="color: #360f6b;"><b>Rule: </b></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, a. Unde dolore, illo facere qui aut pariatur repellat, officiis quia eaque autem fugiat. Ipsa adipisci facere itaque, omnis sunt possimus.</i></p>
+                                    <button style="background-color: #360f6b; color: #fff; border: 1px solid #360f6b;" disabled id="quate-btn1" class="btn" onclick="visible1()"> start</button>
+                                    
+                                </div>
+
+                            <div class="quiz-body">
+                                <div class="inner-div">
+                                
+                                    <h2 class="question">Q1: what is the full form of HTML?</h2>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <input type="radio" name="answer" value=
+                                        "ans1" id="ans1" class="answer">
+                                        <label for="ans1" id="option1"> A. Hey Text to my land</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="answer" value="ans2" id="ans2" class="answer">
+                                        <label for="ans2" id="option2"> B. Hey Text markup language</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="answer" value="ans3" id="ans3" class="answer">
+                                        <label for="ans3" id="option3"> C. Heyper Text markup language</label>
+                                    </li>
+                                    
+                                </ul>   
+                                <button  id="quate-btn" class="btn" type="submit" onclick="nextQus()">submit</button>    
+                            </div> 
+                            <div class="result" style="font-family: 'Lobster Two', cursive; color: #360f6b;">
+                                <h4 id="resultTitle"></h4>
+                                <p id="re" style="color: black;"></p>
+                                <div class="quit">
+                                    <button style="background-color: #360f6b; color: #fff; border: 1px solid #360f6b;" class="btn" onclick="home()">Quite Quiz</button>
+                                </div>
+                            </div>  
+                        </div>
+                        
+                    </div>
+                    
+                    
+                        
+                    </div>
+                </div>
+        </div>
+        
+    </div>
+    
+   
+
+    <script src="quiz.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+</body>
+</html>
+
+
+
+    

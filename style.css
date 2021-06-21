@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+#my-mane{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+
+}
+.quote-heading h2{
+    font-family: 'Lobster Two', cursive;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+.quote-wrapper{
+    
+    background-color: rgba(104, 59, 164, .4) ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 5px 10px #360f6b;
+}
+
+
+
+
+#lorem{
+    font-family: 'Lobster Two', cursive;
+}
+
+
+
+#quate-btn{
+    background-color: #5a348c ;
+    color: #fff;
+    border: 1px solid #5a348c;
+    
+}
+#quate-btn:hover{
+    background-color: #360f6b ;
+    color: #fff;
+    
+}
+.resultAfter{
+    display: none;
+}
+.quate-btnAfter{
+    display: none;
+}
+.quit{
+    display: none;
+}
+
+ul{
+    margin-left: 10%;
+}
+
+#quite-btn3{
+    background-color: #5a348c ;
+    color: #fff;
+    border: 1px solid #5a348c;
+    
+}
+#quite-btn3:hover{
+    background-color: #360f6b ;
+    color: #fff;
+    
+}
+
+#quate-btn2{
+    background-color: #5a348c ;
+    color: #fff;
+    border: 1px solid #5a348c;
+    
+}
+#quate-btn2:hover{
+    background-color: #360f6b ;
+    color: #fff;
+    
+}
+
+#quite-btn1{
+    background-color: #5a348c ;
+    color: #fff;
+    border: 1px solid #5a348c;
+    
+}
+#quite-btn1:hover{
+    background-color: #360f6b ;
+    color: #fff;
+    
+}
+
+
+.input-custom{
+    font-family: 'Lobster Two', cursive;
+    margin: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #360f6b
+}
+.select-custom{
+    
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 2px;
+    padding-left: 5px;
+    border-radius: 5px;
+    border: 1px solid #360f6b
+}
+option{
+    font-family: 'Lobster Two', cursive;
+}
+
+
+
+
+.quiz_wripper{
+    background-color: rgba(104, 59, 164, .4) ;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 5px 10px #360f6b;
+
+}
+
+footer{
+     
+    margin-top: 38%; 
+    padding: 50px; 
+    
+    background-color: #271c36;
+    border-radius: 5px;
+}
+#con-icon1{
+    font-size: 25px;
+    color: #c6b1e3;
+    border: 1px solid #c6b1e3;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+#con-icon2{
+    font-size: 25px;
+    color: #c6b1e3;
+    border: 1px solid #c6b1e3;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+#con-icon3{
+    font-size: 25px;
+    color: #c6b1e3;
+    border: 1px solid #c6b1e3;
+    padding: 7px;
+    border-radius: 50%;
+}
+.cont-d-in-ti{
+    color: #c6b1e3;
+    margin-top: 5px;
+    font-family: cursive;
+}
+.cont-d-in-details{
+    color: #c6b1e3;
+    margin-top: 7px;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+@media only screen and (max-width: 600px) {
+    footer{
+        
+        margin-top: 1000px;
+    }
+
+    #section_quota{
+        width: 70%;
+        margin-left: 40px;
+    }
+   
+    #tempImage{
+        height: 280px;
+        width: 280px;
+        margin-top: 20px;
+        padding-right: 25px;
+        
+    }
+    
+  }

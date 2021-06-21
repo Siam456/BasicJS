@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top" >
+            <div class="container">
+                <a href="home.html" class="navbar-brand"><h3>Basic<span style="color: #683BA4;">JS.</span></h3></a>
+                <button class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+                    <span class="navbar-toggler-icon"></span>
+    
+                </button>
+                <div class="navbar-collapse collapse" id="navbar" >
+                    <ul class="navbar-nav  ml-auto">
+                      <li class="nav-item"><a href="home.html" class="nav-link" style="color: #683BA4;"><b>Home</b></a></li>
+                      <li class="nav-item"><a href="convertetr.html" class="nav-link" style="color: #683BA4;">Converter</a></li>
+                      <li class="nav-item"><a href="quiz.html" class="nav-link" style="color: #683BA4;">Quiz</a></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+            <div class="container">
+                <div id="section_quota" style=" position: absolute; top: 10%;">
+                    <div class="row flex-column-reverse flex-lg-row">
+                        
+                        <div class="col-lg-5 mt-5 m-lg-5 m-sm-0">
+                            <div class="row">
+                                <h1 id="my-name"  style="color: #360f6b;">Hasibul Hasan<span style="color: #683BA4;">.</span></h1>
+                                <p class=" pr-3 m-2" id="lorem"><i>Here is the Random Quote generator. You can get Quate by <span style="color: #1d083b;"><B>reloading page</B></span> or Clicking <span style="color: #1d083b;"><b>New Quote</b></span> Button.</i></p>
+                                
+    
+                            </div>
+                            <div class="row mt-3">
+                                <div class="quote-wrapper" >
+                                    <div class="quote-heading">
+                                        <h2 style="color: #360f6b;">The random quote generator</h2>
+                                        
+                                    </div>
+                                    <div class="quote-body" >
+                                        <div class="icon-quote">
+                                            <span class="icon">
+                                                <i class="fas fa-quote-left" style="color: #1d083b;"></i>
+                                            </span>
+                                            <span class="quote">I'm not a great programmer; I'm just a good programmer with great habits.</span>
+                                        </div>
+                                        <div class="author mr-lg-5 pt-2" style="font-style: italic; float: right;">― Kent Beck</div>
+                                        <div class="btn-quate mt-5">
+                                            <button id="quate-btn" class="btn" onclick="qq()">
+                                                <b>New Quate</b>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-lg-5" >
+                            <img id="tempImage" src="./Pngtre business team work concept target_5335927.png" height="440px" width="440px" alt="">
+        
+                        </div>
+                        
+                            
+                        </div>
+                    </div>
+            </div>
+                
+            <footer class="container" id="contract">
+                <class class="row">
+                    <class class="col-lg-4" style="text-align: center;">
+                        
+                            <div class="cont-d-in">
+                                <i class="fas fa-envelope-open-text" id="con-icon1"></i>
+                                <h4 class="cont-d-in-ti">Get in Touch</h4>
+                                <p class="cont-d-in-details">Phone: 01755770538<br>Email: hasibul15-11038@diu.edu.bd<br>Phone: 01643126129<br>Email: hassibulhasansiam.sr@gmail.com</p>
+                               
+                                
+                            </div>
+                    </class>
+                    <class class="col-lg-4" style="text-align: center;">
+                        <div class="cont-d-in">
+                            <i class="fas fa-house-user" id="con-icon2"></i>
+                            <h4 class="cont-d-in-ti">Address</h4>
+                            <p class="cont-d-in-details">Dhaka, Bangladesh<br>HomeTown: Faridpur,<br>Dhaka, Bangladesh</p>
+                           
+                            
+                        </div>
+                    </class>
+                    <class class="col-lg-4" style="text-align: center;">
+                        <div class="cont-d-in">
+                            <i class="fas fa-user-circle"  id="con-icon3"></i>
+                            <h4 class="cont-d-in-ti">Personal Info</h4>
+                            <p class="cont-d-in-details">Hasibul Hasan<br>Bachelor of Science<br>Computer Science & Engineering
+                                <br>Daffodil International University
+                            </p>
+                           
+                            
+                        </div>
+                    </class>
+                </class>
+                
+                    <p style="color: #c6b1e3; text-align: center; padding: 0%; margin-top: 7px; margin-bottom: 0;">Thank You For visiting</p><br>
+                        
+                
+                <h4 style="color: #c6b1e3; text-align: center; padding: 0; margin: 0;">© Hasibul Hasan</h4>
+    
+            </footer>
+    </div>
+
+    <script src="random.js"></script>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+</body>
+</html>
